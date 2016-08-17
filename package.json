@@ -1,0 +1,20 @@
+{
+  "name": "video9",
+  "version": "0.0.20",
+  "description": "Practica 20 del curso de codigofacilito",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andres López",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-session": "^2.0.0-alpha.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.4.12"
+  }
+}

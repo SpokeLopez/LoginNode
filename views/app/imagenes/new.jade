@@ -1,0 +1,13 @@
+extends ../../layout
+block contenido
+    div(class="col-md-4 remove-float center-block text-center big-top-space")
+        h1 Guardar nueva imagen
+        form(action="/app/imagenes/",method="POST")
+            div(class="form-group")
+                label(for="title") Titulo
+                input(type="text",name="title",id="title",placeholder="Titulo de la Imagen",class="form-control")
+            div(class="form-group")
+                label(for="file") Imagen
+                input(type="file",name="file",id="file")
+            div(class="btn-group")
+                input(type="submit",value="Guardar",class="btn btn-primary")

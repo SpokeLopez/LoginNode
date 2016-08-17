@@ -1,0 +1,37 @@
+extends ./layout
+block contenido
+    div(class="col-md-8 remove-float center-block text-center big-top-space")
+        form(action="/signup",method="POST")
+            div(class="form-group")
+                label(for="name") Nombres
+                input(type="text",name="name",id="name",placeholder="Nombres completos",class="form-control")
+            div(class="form-group")
+                label(for="lastname") Apellidos
+                input(type="text",name="lastname",id="lastname",placeholder="Apellidos completos",class="form-control")
+            div(class="form-group")
+                label(for="age") Edad
+                input(type="number",name="age",id="age",placeholder="Edad",class="form-control")
+            div(class="form-group")
+                label(for="date") Fecha de Nacimiento
+                input(type="date",class="form-control",id="date",name="date")
+            div(class="form-group")
+                label(for="sex") Genero
+                select(id="sex",name="sex",class="form-control")
+                    option(value="M") Mujer
+                    option(value="H") Hombre
+            div(class="form-group")
+                label(for="username") Nombre de Usuario
+                input(type="text",name="username",id="username",placeholder="Nombre de Usuario",class="form-control")
+            div(class="form-group")
+                label(for="email") Email
+                input(type="text",name="email",id="email",placeholder="Correo Electrónico",class="form-control")
+            div(class="form-group")
+                label(for="password") Contraseña
+                input(type="password",name="password",id="password",placeholder="Contraseña",class="form-control")
+            div(class="form-group")
+                label(for="password_confirmation") Repita Contraseña
+                input(type="password",name="password_confirmation",id="password_confirmation",placeholder="Repita la Contraseña",class="form-control")
+            div(class="btn-group")
+                input(type="submit",value="Registrar",class="btn btn-primary")
+                a(href="/login",class="btn btn-warning") Iniciar sesión
+            h1(id="message")

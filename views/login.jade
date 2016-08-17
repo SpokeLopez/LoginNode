@@ -1,0 +1,13 @@
+extends ./layout
+block contenido
+    div(class="col-md-4 remove-float center-block text-center big-top-space")
+        form(action="/sessions",method="POST")
+            div(class="form-group")
+                label(for="email") Email
+                input(type="text",name="email",id="email",placeholder="Correo Electrónico",class="form-control")
+            div(class="form-group")
+                label(for="password") Contraseña
+                input(type="password",name="password",id="password",placeholder="Contraseña",class="form-control")
+            div(class="btn-group")
+                input(type="submit",value="Iniciar sesión",class="btn btn-primary")
+                a(href="/signup",class="btn btn-warning") Crear un usuario
