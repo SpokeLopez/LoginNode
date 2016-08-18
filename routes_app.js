@@ -8,6 +8,7 @@ router.get("/",function (req,res) {
 });
 router.get("/imagenes/new",function (req,res) {
     res.render("app/imagenes/new");
+    
 });
 
 router.all("/imagenes/:id*",image_finder_middleware);
